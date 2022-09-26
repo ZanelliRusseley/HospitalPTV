@@ -15,9 +15,9 @@ class Consultas:
 
     def get_data_dict(self):
         return ({
-            'id': id,
-            'medico_id': dao_medico.get_by_id(self.medico_id).get_data_dict(),
-            'paciente_id': dao_paciente.get_by_id(self.paciente_id).get_data_dict()
+            'id': self.id,
+            'Medico': dao_medico.get_by_id(self.medico_id).get_data_dict(),
+            'Paciente': dao_paciente.get_by_id(self.paciente_id).get_data_dict()
         })
 
     def __str__(self):

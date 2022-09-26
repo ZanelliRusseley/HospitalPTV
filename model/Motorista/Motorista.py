@@ -11,9 +11,9 @@ class Motoristas:
     def get_dict(self):
         return{
             'id': self.id,
-            'nome': self.nome,
-            'cpf': self.cpf,
-            'cnh': self.cnh
+            'Nome': self.nome,
+            'CPF': self.cpf,
+            'CNH': self.cnh
         }
 
     def __str__(self):

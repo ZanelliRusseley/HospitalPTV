@@ -10,8 +10,8 @@ class Enfermeiros:
     def get_data_dict(self):
         return{
             'id': self.id,
-            'nome': self.nome,
-            'cpf': self.cpf,
+            'Nome': self.nome,
+            'CPF': self.cpf,
         }
 
     def __str__(self):

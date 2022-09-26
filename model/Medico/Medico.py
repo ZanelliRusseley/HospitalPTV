@@ -11,9 +11,9 @@ class Medicos:
     def get_data_dict(self):
         return{
             'id': self.id,
-            'nome': self.nome,
-            'cpf': self.cpf,
-            'crm': self.crm
+            'Nome': self.nome,
+            'CPF': self.cpf,
+            'CRM': self.crm
         }
 
     def __str__(self):

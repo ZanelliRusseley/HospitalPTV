@@ -47,8 +47,8 @@ def add_paciente():
 def get_paciente_by_id(id):
     paciente = dao_paciente.get_by_cpf(id)
     if not paciente:
-        return make_response({'erro': 'Pacoente não encontrado'}, 404)
-    data =  paciente.get_data_dict()
+        return make_response({'erro': 'Paciente não encontrado'}, 404)
+    data = paciente.get_data_dict()
     return make_response(jsonify(data))
 
 @app_paciente.route(f'/{app_name}/delete/<int:id>', methods=['DELETE'])
