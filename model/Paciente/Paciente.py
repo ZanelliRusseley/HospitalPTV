@@ -2,13 +2,12 @@ class Pacientes:
 
     campos_validacao = ['nome', 'cpf']
 
-    def __int__(self, nome, cpf, crm, id=None):
+    def __init__(self, nome, cpf, id=None):
         self.id = id
         self.nome = nome
         self.cpf = cpf
-        self.crm = crm
 
-    def get_dict(self):
+    def get_data_dict(self):
         return{
             'id': self.id,
             'nome': self.nome,
