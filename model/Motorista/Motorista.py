@@ -8,7 +8,7 @@ class Motoristas:
         self.cpf = cpf
         self.cnh = cnh
 
-    def get_dict(self):
+    def get_data_dict(self):
         return{
             'id': self.id,
             'Nome': self.nome,

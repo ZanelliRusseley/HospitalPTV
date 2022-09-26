@@ -41,7 +41,7 @@ class MotoristaDao:
         return motoristas
 
     def get_by_cpf(self, cpf):
-        cursor =self.DataBase.cursor()
+        cursor = self.DataBase.cursor()
         cursor.execute(self._SELECT_BY_CPF.format(self._TABLE_NAME, cpf))
         columns_name = [desc[0] for desc in cursor.description]
         motorista = cursor.fetchone()

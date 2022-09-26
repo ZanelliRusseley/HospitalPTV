@@ -94,3 +94,6 @@ def update_socorrer(id):
         oldSocorrer = dao_socorrer.get_by_id(id)
         if not oldSocorrer:
             return make_response({'Erro': 'Este id não existe!'})
+        newSocorrer = Socorros(**data)
+        dao_socorrer.update_Socorrer(newSocorrer, oldSocorrer)
+        return make_response({'id': oldSocorrer.id})

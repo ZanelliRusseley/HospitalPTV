@@ -15,7 +15,7 @@ class Socorros:
     def get_data_dict(self):
         return({
             'id': self.id,
-            'Motorista': dao_motorista.get_by_id(self.motorista_id).get_dict(),
+            'Motorista': dao_motorista.get_by_id(self.motorista_id).get_data_dict(),
             'Ambulancia': dao_ambulancia.get_by_id(self.ambulancia_id).get_data_dict()
         })
 
